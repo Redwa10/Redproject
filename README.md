@@ -1,1 +1,1 @@
-# Redproject
+print("hello world")
