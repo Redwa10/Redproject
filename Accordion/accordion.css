@@ -6,37 +6,51 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-
 }
-
 .accordion{
-    width: 65%;
     background-color: white;
     padding: 30px;
     border-radius: 30px;
+    width: 65%;
+
 }
 .accordion-title{
     margin-bottom: 30px;
-    text-align: center;
 }
+
 .question{
-    padding: 18px 0px;
     font-size: 22px;
-    cursor: pointer;
+    padding: 10px 20px;
     border-bottom: 1px solid #000;
+    cursor: pointer;
     position: relative;
 }
 .question::after{
     content: '+';
-
     position: absolute;
-    right: -5px;
+    right: 5px;
+
 }
 .answer{
-    padding-top: 15px;
+    padding-top: 20px;
     font-size: 22px;
     line-height: 1.5;
-    height: 0px;
+    width: 100%;
+    max-height: 0px;
+    transition: .5s;
     overflow: hidden;
+    
+}
+.active .answer{
+    max-height: 150px;
+
+}
+.active .question::after{
+    content: '-';
+    font-size: 30px;
+    transition: .5s;
+}
+.active .question{
+    font-size: 18px;
     transition: .5s;
 }
