@@ -1,0 +1,51 @@
+body{
+    background: url(img/pool.jpg) center center/ cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.container{
+    background-color: white;
+    width: 60%;
+    height: 250px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#timer{
+    font-size: 72px;
+    width: 100%;
+}
+.buttons{
+    margin-top: 20px;
+}
+button{
+    margin: 0 10px;
+    padding: 0;
+    border: none;
+}
+button:active{
+    cursor: pointer;
+}
+button i{
+    font-size: 1.5rem;
+    padding: 10px;
+    color: white;
+    width: 50px;
+}
+#play{
+    background-color: red;
+
+}
+#reset{
+    background-color: green;
+}
+#pause{
+    background-color: orange;
+}
