@@ -47,7 +47,7 @@ input{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     background-color: white;
     border-radius: 10px;
     padding: 5px;
@@ -62,8 +62,28 @@ input{
     margin: 10px;
 }
 .task button{
-    
+    flex: 1;
     border-radius: 10px;
     cursor: pointer;
     background-color: #fff;
+}
+.task .checkTask{
+    color: orange;
+    margin-right: 5px;
+    border: solid 2px orange;
+    font-size: 1.5rem;
+}
+.task .checkTask:hover{
+    background-color: orange;
+    color:#fff;
+}
+.task .deleteTask{
+    color: red;
+    margin-right: 5px;
+    border: solid 2px red;
+    font-size: 1.5rem;
+}
+.task .deleteTask:hover{
+    background-color: red;
+    color: #fff;
 }

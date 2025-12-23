@@ -26,4 +26,21 @@ addTask.addEventListener('click', function(){
         taskContainer.appendChild(task);
     }
     inputTask.value = '';
+
+    checkBtn.addEventListener('click', function(){
+
+        if (checkBtn.parentElement.style.textDecoration === "none"){
+            checkBtn.parentElement.style.textDecoration = "line-through";
+            checkBtn.innerHTML = '<i class = "fa-solid fa-minus"></i>';
+        }else if(checkBtn.parentElement.style.textDecoration = "line-through"){
+            checkBtn.parentElement.style.textDecoration = "none";
+            checkBtn.innerHTML = '<i class = "fa-solid fa-check"></i>';
+            
+        }
+    });
+
+    deleteBtn.addEventListener('click', function(e){
+        let target = e.target;
+        target.parentElement.parentElement.remove();
+    });
 });
